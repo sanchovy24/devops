@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Информация о дисках файловой системы:') {
             steps {
-                echo 'Hello World from Master'
+                  sh 'df -h'
             }
         }
     }
